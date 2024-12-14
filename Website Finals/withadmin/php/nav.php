@@ -66,10 +66,13 @@ require_once 'connection.php';
 <?php }?>
 </div>
         </div>
-        <div class="search-bar">
-          <input type="text" placeholder="Search Products" />
-          <i class="fas fa-search"></i>
-        </div>
+        <form action="shop.php" method="GET" class="search-bar">
+  <input type="text" name="search" placeholder="Search Products" />
+  <button type="submit">
+    <i class="fas fa-search"></i>
+  </button>
+</form>
+
         <div class="user-cart-icons">
         <div class="dropdown">
   <i class="fas fa-user dropdown-toggle" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false"></i>

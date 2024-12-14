@@ -266,30 +266,33 @@ p {
   max-width: 400px;
   margin: 20px auto;
   display: flex;
-  align-items: center;
+  align-items: center; /* Vertically aligns input and button */
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 20px;
-  padding: 5px;
+  overflow: hidden; /* Ensures no overflow */
 }
 
 .search-bar input {
-  flex: 1;
+  flex: 1; /* Fills the remaining space */
   border: none;
   outline: none;
   font-size: 14px;
-  padding: 8px 15px;
+  padding: 10px 15px; /* Add padding for better spacing */
   font-family: "Poppins", sans-serif;
-  border-radius: 20px;
 }
 
 .search-bar button {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 5px 10px;
+  padding: 0 15px; /* Horizontal padding only */
   font-size: 16px;
   color: #555;
+  display: flex;
+  align-items: center; /* Vertically aligns the icon */
+  justify-content: center; /* Horizontally centers the icon */
+  height: 100%; /* Matches the height of the input */
 }
 
 .search-bar button:hover {
@@ -299,7 +302,10 @@ p {
 .search-bar button i {
   display: inline-block;
   vertical-align: middle;
+  font-size: 20px; /* Adjusts the icon size */
 }
+
+
 
 /* Keyframe Animations */
 @keyframes fadeIn {
